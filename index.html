@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <section class="hero is-primary is-bold">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Ketik Cepat
+                </h1>
+                <h2 class="subtitle">
+                    version 1.0.0
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <div class="container" style="margin-top:5%;">
+        <div class="columns is-mobile">
+
+            <div class="tile is-ancestor">
+                <div class="tile is-parent">
+                    <div class="column">
+                        <center>
+                            <p class="title is-1 is-spaced" style="font-size:8vw;" id="current-word"></p>
+                        </center>
+                        <div class="field" style="margin-top:10%">
+                            <div class="control">
+                                <input class="input is-large" type="text" id="input-keyword" placeholder="Start Typing ...">
+                            </div>
+                            <center style="margin-top:20px">
+                                <p class="title is-4" id="message"></p>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <div class="tile is-2 is-vertical is-parent">
+                        <div class="tile is-child box ">
+                            <p class="title">TIME</p>
+                            <p class="title is-1" id="time">0</p>
+                        </div>
+                        <div class="tile is-child box">
+                            <p class="title">SCORE</p>
+                            <p class="title is-1" id="score">0</p>
+                        </div>
+                        
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
