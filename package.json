@@ -1,0 +1,19 @@
+{
+  "name": "fast-typing",
+  "version": "1.0.0",
+  "description": "ketik cepat wahyu alfarisi",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [
+    "wahyu",
+    "alfarisi"
+  ],
+  "author": "wahyu alfarisi",
+  "license": "ISC",
+  "homepage": "https://wahyualfarisi/ketik-cepat",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
