@@ -21,6 +21,7 @@
                 </h1>
                 <h2 class="subtitle">
                     version 1.0.0
+                    <p id="show-time"></p>
                 </h2>
             </div>
         </div>
@@ -37,7 +38,7 @@
                         </center>
                         <div class="field" style="margin-top:10%">
                             <div class="control">
-                                <input class="input is-large" type="text" id="input-keyword" placeholder="Start Typing ...">
+                                <input class="input is-large" type="text" id="input-keyword" placeholder="Start Typing ..." autofocus>
                             </div>
                             <center style="margin-top:20px">
                                 <p class="title is-4" id="message"></p>
@@ -54,6 +55,18 @@
                             <p class="title">SCORE</p>
                             <p class="title is-1" id="score">0</p>
                         </div>
+
+                        <div class="tile is-child box">
+                            <p class="title is-6">SPEED</p>
+                            <select id="change-speed">
+                                <option value=""> --  -- </option>
+                                <option value="5"> 5 </option>
+                                <option value="10"> 10 </option>
+                                <option value="20"> 20 </option>
+                            </select>
+                        </div>
+
+                        
                         
                     </div>
             </div>
