@@ -13,6 +13,7 @@ const scoreDisplay  = document.querySelector('#score');
 const timeDisplay   = document.querySelector('#time');
 const message       = document.querySelector('#message');
 const second        = document.querySelector('#seconds');
+const showTime      = document.querySelector('#show-time');
 
 const wordData = [
     'javascript app',
@@ -33,12 +34,23 @@ const wordData = [
 function initializeApp()
 {
     showWord(wordData);
-
+    showTime.innerHTML = `Kecepatan mengetik <b>${time}</b>. detik`;
     textInput.addEventListener('input', startPlay);
 
     setInterval(countDown, 1000);
     setInterval(checkStatusPlay, 50);
 }
+
+document.querySelector('#change-speed').addEventListener('change', function(){
+    if(this.value !== ''){
+        time = parseInt(this.value) + 1;
+        showWord(wordData);
+        showTime.innerHTML = `Kecepatan mengetik ${time - 1}. detik`;
+    }else{
+        time = 6;
+    }
+   
+});
 
 function startPlay()
 {
