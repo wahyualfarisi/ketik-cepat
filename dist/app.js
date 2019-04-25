@@ -69,6 +69,7 @@ function matchWord()
 {
     if(textInput.value === currentWord.innerHTML)
     {
+        message.style.color = 'green';
         message.innerHTML = 'Correct!';
         return true;
     }else{
@@ -99,6 +100,7 @@ function checkStatusPlay()
 {
     if(!isPlaying && time === 0)
     {
+        message.style.color = 'red';
         message.innerHTML = 'Game Over';
         score = 0;
     }
