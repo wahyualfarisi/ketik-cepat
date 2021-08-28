@@ -73,7 +73,7 @@ const App = ( () => {
     }
 
 
-    const  matchWord = () => {
+    const matchWord = () => {
         if(textInput.value === currentWord.innerHTML)
         {
             message.style.color = 'green';
@@ -110,7 +110,6 @@ const App = ( () => {
 
     return {
         init: () => {
-            console.log('init apps');
             eventListener();
             initializeApp();
         }
